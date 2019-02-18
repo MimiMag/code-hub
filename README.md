@@ -1,9 +1,9 @@
 # code-hub
 
-![happy face](https://cd.sseu.re/Quizzz__Codaisseur_Reader_v3.0_2019-02-18_16-48-37.png)
-
 In this repo, we'll build a full stack simple app from scratch and deploy it to learn all about the different technologies we are using.
 Our first feature will be displaying a list of links of [hackernews](https://news.ycombinator.com/), later we might add more features.
+
+![happy face](https://cd.sseu.re/Quizzz__Codaisseur_Reader_v3.0_2019-02-18_16-48-37.png)
 
 Steps we will take:
 1. Create A Simple GraphQL Server - using `graphql-yoga`
