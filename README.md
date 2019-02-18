@@ -23,8 +23,6 @@ src: [HowToGraphQL (_Introduction - Simple Mutation_)](https://www.howtographql.
     * GraphQL allows us (on the client side) to query for multiple models in one request
 * You need to know that you use a `query` to retreive some data and a `mutation` to modify data
     
- > "_Give me some typeDefs and Resolvers, and I'll make it work_" - Graphql-Yoga
-    
  ### Learning Goals
  By the end of this step, you will understand that...
  * you can set up a graphql-server by calling a new instance of _**GraphQLServer**_ (provided by `graphql-yoga`)
@@ -32,3 +30,8 @@ src: [HowToGraphQL (_Introduction - Simple Mutation_)](https://www.howtographql.
  * **typedefs** are an interface to explain to the outside world what our data looks like and how it can be changed
  * typedefs are also called a **schema**
  * **resolvers** are key value pairs that contain the logic (functions) to actually return the data
+ 
+ ### Steps
+ See: [HowToGraphQL (_Introduction - Simple Mutation_)](https://www.howtographql.com/graphql-js/0-introduction/)
+
+ > "_Give me some typeDefs and Resolvers, and I'll make it work_" - Graphql-Yoga
