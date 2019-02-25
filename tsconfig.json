@@ -1,0 +1,13 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "lib": [
+      "es2016",
+      "esnext.asynciterable"
+    ]
+  },
+}
