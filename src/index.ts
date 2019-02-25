@@ -1,26 +1,17 @@
 const { GraphQLServer } = require('graphql-yoga')
 
-// ILink = [{
-//   id: ID,
-//   url: String,
-//   description: String
-// }]
+interface IArgs {
+  description: string,
+  url: string,
+}
 
-// const typeDefs = `
-//   type Query {
-//     info: String,
-//     feed: [Link],
-//   }
-//   type Mutation {
-//     addLink(url: String, description: String): Link!
-//   }
-//   type Link {
-//     id: ID!,
-//     url: String,
-//     description: String
-//   }
-// `
-const links = []
+interface ILink {
+  description: string,
+  url: string,
+  id: string
+}
+
+const links: ILink[] = []
 let counter = 1
 
 const resolvers = {
@@ -29,7 +20,7 @@ const resolvers = {
     feed: () => links,
   },
   Mutation: {
-    addLink: (_, args) => {
+    addLink: (_:any, args:IArgs) => {
       const newLink =  {
         id: `${counter}`,
         description: args.description,
