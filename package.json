@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "deploy": "cd ./prisma; prisma deploy; prisma generate; cd ..;"
+
   },
   "dependencies": {
     "graphql-yoga": "^1.17.4"
