@@ -59,5 +59,5 @@ src: [HowToGraphQL (_Introduction - Simple Mutation_)](https://www.howtographql.
  * How to create a `prisma.yml`-file and a `datamodel` to set up prisma in your app
  * How to `deploy` prisma to create tables in your database and generate some basic queries/mutations available on our prisma endpoint.
  * How to run `prisma generate` to add files with the logic to create these queries/mutation to our app, so we can reuse it.
- 
+ ![generate from model](https://cd.sseu.re/Datamodel_MySQL_-_Prisma_Docs_2019-03-04_13-45-48.png)
  
