@@ -37,7 +37,7 @@ src: [HowToGraphQL (_Introduction - Simple Mutation_)](https://www.howtographql.
  > "_Give me some typeDefs and Resolvers, and I'll make it work_" - Graphql-Yoga
  
  ## 2. Setting Up TypeScript and Prisma
- src: [HowToGraphQL (_Adding A Database_)](https://www.howtographql.com/graphql-js/4-adding-a-database/), [Readest (Typescript 1)](https://readest.codaisseur.com/courses/advanced-bootcamp/06-typescript/typescript-tools), [Set Up Prisma](https://www.prisma.io/docs/1.26/get-started/01-setting-up-prisma-new-database-TYPESCRIPT-t002/)
+ src: [HowToGraphQL (_Adding A Database_)](https://www.howtographql.com/graphql-js/4-adding-a-database/), [Readest (Typescript 1)](https://readest.codaisseur.com/courses/advanced-bootcamp/06-typescript/typescript-tools), [Set Up Prisma](https://www.prisma.io/docs/1.26/get-started/01-setting-up-prisma-new-database-TYPESCRIPT-t002/), [Prisma Datamodel](https://www.prisma.io/docs/datamodel-and-migrations/datamodel-MYSQL-knul/)
  
  ![postgres and prisma](https://i.imgur.com/yEsyfKh.png)
  
