@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "nodemon",
     "deploy": "cd ./prisma; prisma deploy; prisma generate; cd ..;"
-
   },
   "dependencies": {
     "graphql-yoga": "^1.17.4"
   },
   "devDependencies": {
     "nodemon": "^1.18.10",
+    "prisma-client-lib": "^1.27.4",
     "ts-node": "^8.0.2",
     "typescript": "^3.3.3333"
   }
