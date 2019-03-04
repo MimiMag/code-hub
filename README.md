@@ -61,3 +61,24 @@ src: [HowToGraphQL (_Introduction - Simple Mutation_)](https://www.howtographql.
  * How to run `prisma generate` to add files with the logic to create these queries/mutation to our app, so we can reuse it.
  ![generate from model](https://cd.sseu.re/Datamodel_MySQL_-_Prisma_Docs_2019-03-04_13-45-48.png)
  
+ ## 3. Connecting Prisma to our GraphQl Server
+ ![context](https://cdn.worldvectorlogo.com/logos/context.svg)
+ src: [how to graphql](https://www.howtographql.com/graphql-js/5-connecting-server-and-database/)
+ 
+ ### Pre-requisites
+ * The info above
+ * That `seeds` are dummy data, used to populate your database.
+ 
+ ### Learning Goals
+ By the end of this step you will understand...
+ 
+ * How to connect your Prisma Server to your home-made graphql server using the `context` argument in the resolvers.
+ * How to populate your database using `seeds` in `prisma`.
+ 
+ ## 4. Building a front end with React-Apollo
+ 
+ ### Pre-requisites
+ 
+ ### Learning Goals
+ ![Architecture](https://cd.sseu.re/Getting_Started_with_GraphQL_React__Apollo_Tutorial_2019-03-04_14-12-33.png)
+ 
