@@ -1,0 +1,4 @@
+mutation{
+  codaisseur: createLink(data: { url: "codaisseur.com", description: "codaisseur" }){id}
+  howtographql: createLink(data: { url: "howtographql.com", description: "How To Graphql" }){id}
+}
