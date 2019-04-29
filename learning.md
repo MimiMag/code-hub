@@ -75,6 +75,53 @@ src: [HowToGraphQL (_Introduction - Simple Mutation_)](https://www.howtographql.
  * How to connect your Prisma Server to your home-made graphql server using the `context` argument in the resolvers.
  * How to populate your database using `seeds` in `prisma`.
  
+ ### 3.1. Environmental Variables
+ Environmental variables are an important part of creating a more flexible code when it comes to setting up a project.
+
+ There reasons to use want to use environmental variables:
+ * Maybe you want to start your process twice.
+ * Maybe you want to connect to a server on another computer.
+ * Storing values you use on multiple places all around the code for example API keys.
+ * etc
+
+ Resolving:
+ * You cant start your server twice on the same address because its already in use.
+ * Connecting to another server is easily done by simply overwriting the value.
+ * Secret API keys should **never** be part of your source code, as this is sensitive data and subject to change.
+
+ Concept:
+ * The basic concept is to make a `.env` file in the root of your project and 1 variable per line `PORT=4000`.
+ * Use `process.env.PORT` in the code to reffer to that value when you create your server.
+ * Overwrite this value when needed when starting your application when needed `PORT=4001 yarn start`.
+
+ ## 3.1.1 Setting up Environmental Variables
+ In this example we use the package [`dotenv-cli`](https://www.npmjs.com/package/dotenv-cli).
+
+ * Add it to your dev dependencies: `yarn add dotenv-cli -D`
+ * Edit your `package.json` script to run :
+  ```
+    "scripts": {
+      "dev": "dotenv -- nodemon",
+      etc...
+  ```
+ * Create a `.env` file in the root directory of your project (same level as `package.json`)
+ * **VERY IMPORTANT**: add `.env` to your `.gitignore`:
+  * By adding it manually or 
+  * Be fancy and use a command: `echo ".env" >> .gitignore`
+ * Defining variables:
+  ```
+  IP=localhost
+  PORT=4000
+  SCHEMA=http
+  SERVER=${SCHEMA}://${IP}:${PORT}
+  ```
+ 
+ [`dotenv-cli`](https://www.npmjs.com/package/dotenv-cli) allows us to reuse values while defining them, something a simular package like [`dotenv`](https://www.npmjs.com/package/dotenv) does not provide.
+
+ ### 3.1.2 Using Environmental Variables
+ To run your application on a different port, simply do: `PORT=4001 yarn start`
+ And `console.log(process.env.SERVER)` should automatically be updated to use the new port number.
+
  ## 4. Building a front end with React-Apollo
  
  ### Pre-requisites
